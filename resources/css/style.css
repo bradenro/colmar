@@ -78,15 +78,17 @@ html{
 }
   .learn_container{
     /*width: 100%;*/
+    padding-top: 64px;
     background-color: lightgrey;
-    margin: 32px 0px;
+    /*margin-top: 32px;*/
     display: flex;
     flex-direction: row;
   }
   .imag{
-    width: 60%;
+    width: 69%;
     height:auto;
     margin-right: 24px;
+    margin-left: 24px;
   }
   .imag img{
 
@@ -141,4 +143,48 @@ html{
     margin-left: 16px;
     margin-top: 32px;
   }
+}
+
+/*Styling for practice segment*/
+
+#practice{
+  display: flex;
+  flex-direction: row;
+}
+
+#practice_left{
+  width:60%;
+  /*height:auto;*/
+  border: solid 1px red;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+#practice_image img{
+  width:100%;
+  height: auto;
+}
+#practice_image{
+  margin:32px 24px 32px 0px;
+}
+#practice_image h5{
+}
+#practice_right{
+  width:40%;
+  height:10px;
+  border: solid 1px blue;
+}
+
+#practice_left p{
+  line-height: 1.3rem;
+  font-weight: lighter;
+}
+h5{
+  margin: 32px 0px;
+  font-size: 0.8rem;
+}
+
+#practice_right{
+  display: flex;
+  flex-direction: column;
 }
