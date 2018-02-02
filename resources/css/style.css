@@ -1,6 +1,9 @@
 .mobile{
   display:none;
 }
+.container_image_mobile{
+    display:none;
+}
 html{
   font-family: helvetica;
 
@@ -17,7 +20,7 @@ html{
     height:64px;
     background-color: white;
   }
-  header a{
+  header, a{
     color: #2e2e2e;
   }
   .logo{
@@ -142,7 +145,7 @@ html{
     margin-bottom: 32px;
   }
   .learn_container #text_button{
-    margin-left: 16px;
+    margin-left: 0px;
     margin-top: 32px;
     width: 100%;
   }
@@ -190,4 +193,71 @@ h5{
 #practice_right{
   display: flex;
   flex-direction: column;
+  height:630.53px;
+}
+#row1{
+  display: flex;
+  margin-top: 16px;
+  height: 33%;
+  border: solid 1px yellow;
+}
+.rowimg{
+  width: 35%;
+  margin: 16px;
+}
+#practice_right img{
+  width: 100%;
+}
+.practice_row_text{
+  width: 65%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#practice_right a{
+  color: #3385ff;
+  margin-top: 16px;
+}
+h2{
+  font-weight: bold;
+}
+#row2{
+display: flex;
+  height: 33%;
+  border: solid 1px blue;
+}
+#row3{
+  display: flex;
+  height: 33%;
+  border: solid 1px red;
+  background-color: lightgrey;
+}
+@media only screen and (max-width: 550px){
+  #practice_left{
+    display: none;
+  }
+  #practice_right{
+    width: 100%;
+    height: auto;
+  }
+  .rowimg{
+    display:none;
+  }
+  .practice_row_text{
+    width: 100%;
+    margin:16px;
+  }
+  .container_image_mobile{
+    display:flex;
+  }
+  .container_image_mobile img{
+    width:100%;
+    height: auto;
+  }
+  #practice_right h2, p, a{
+    margin-left: 16px;
+  }
+  #practice_right h2{
+    margin-top:32px;
+  }
 }
