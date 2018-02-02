@@ -52,7 +52,7 @@ html{
     height:448px;
   }*/
 
-  @media only screen and (max-width: 450px){
+  @media only screen and (max-width: 550px){
     .desktop{
       display:none;
     }
@@ -77,24 +77,19 @@ html{
     width: 100%;
     padding-top: 64px;
     background-color: lightgrey;
-    /*margin-top: 32px;*/
     display: flex;
-    flex-direction: row;
-    border: solid 1px red;
   }
   .imag{
     width: 60%;
-    height:auto;
-    border: solid 1px blue;
+    /*height:auto;*/
+    padding-left: 24px;
   }
   .imag img{
-    border: solid 1px green;
-    max-width: 95%;
+    max-width: 95.5%;
     max-height: 100%;
-    margin: 32px 24px;
+    margin: 32px 24px 32px 0px;
   }
   .learn_container #text_button{
-    border: solid 1px purple;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,15 +117,22 @@ html{
     font-weight: lighter;
     color: #f2f2f2;
   }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 550px){
   .learn_container{
     flex-direction: column;
     align-items: center;
     margin: 0px;
+    padding: 0px;
   }
   .imag{
     width: 100%;
     margin: 0px;
+    padding: 0px;
+  }
+  .imag img{
+    margin:0px;
+    max-width: 100%;
+    height: auto;
   }
   .learn_container{
     width: 100%;
@@ -142,6 +144,7 @@ html{
   .learn_container #text_button{
     margin-left: 16px;
     margin-top: 32px;
+    width: 100%;
   }
 }
 
