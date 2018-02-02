@@ -50,7 +50,6 @@ html{
 
   .full_container{
     height:448px;
-    border:solid 1px red;
   }
 
   @media only screen and (max-width: 450px){
@@ -75,22 +74,22 @@ html{
 /*Learn content styling*/
 
   #learn{
-  background-color: lightgrey;
   padding-top: 64px;
 }
   .learn_container{
     /*width: 100%;*/
-    margin: 32px 24px;
+    background-color: lightgrey;
+    margin: 32px 0px;
     display: flex;
     flex-direction: row;
-    max-height: 384px;
   }
   .imag{
     width: 60%;
+    height:auto;
     margin-right: 24px;
-    border: solid 1px blue;
   }
   .imag img{
+
     max-width: 100%;
     max-height: 100%;
   }
@@ -112,12 +111,34 @@ html{
   }
 
   #button{
-    width: 40%;
+    width: 30%;
     padding: 8px 25%;
     background-color: #404040;
     border-radius: 4px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     color: #f2f2f2;
   }
+@media only screen and (max-width: 450px){
+  .learn_container{
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+  .imag{
+    width: 100%;
+    margin: 0px;
+  }
+  .learn_container{
+    width: 100%;
+  }
+  #button{
+    width:46%;
+    margin-bottom: 32px;
+  }
+  .learn_container #text_button{
+    margin-left: 16px;
+    margin-top: 32px;
+  }
+}
