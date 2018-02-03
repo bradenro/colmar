@@ -161,7 +161,6 @@ html{
 #practice_left{
   width:60%;
   /*height:auto;*/
-  border: solid 1px red;
   padding-left: 24px;
   display: flex;
   flex-direction: column;
@@ -178,7 +177,6 @@ html{
 #practice_right{
   width:40%;
   height:10px;
-  border: solid 1px blue;
 }
 
 #practice_left p{
@@ -199,7 +197,6 @@ h5{
   display: flex;
   margin-top: 16px;
   height: 33%;
-  border: solid 1px yellow;
 }
 .rowimg{
   width: 35%;
@@ -224,12 +221,10 @@ h2{
 #row2{
 display: flex;
   height: 33%;
-  border: solid 1px blue;
 }
 #row3{
   display: flex;
   height: 33%;
-  border: solid 1px red;
   background-color: lightgrey;
 }
 @media only screen and (max-width: 550px){
@@ -260,4 +255,43 @@ display: flex;
   #practice_right h2{
     margin-top:32px;
   }
+}
+
+#start_learning{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey;
+}
+#start_learning h1{
+  margin-top: 32px;
+}
+#courses{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.course_container{
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  background-color: white;
+}
+ .image_container{
+   width: 100%;
+ }
+ .image_container img{
+   width: 100%;
+ }
+ .course_container h2, p{
+   margin: 16px;
+ }
+.course_container p{
+  color: #979595;
+  font-weight:lighter;
+  margin-top: 8px;
 }
