@@ -255,6 +255,9 @@ display: flex;
   #practice_right h2{
     margin-top:32px;
   }
+  #row3{
+    background-color: white;
+  }
 }
 
 #start_learning{
@@ -294,4 +297,27 @@ display: flex;
   color: #979595;
   font-weight:lighter;
   margin-top: 8px;
+}
+
+@media only screen and (max-width: 550px){
+  .image_container{
+    display: none;
+  }
+  .image_container img{
+    display: none;
+  }
+  .course_container p{
+    display:none;
+  }
+  .course_container{
+    width: 90%;
+  }
+  .course_container h2{
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  #courses{
+    flex-direction: column;
+    align-items: center;
+  }
 }
