@@ -55,7 +55,7 @@ html{
     height:448px;
   }*/
 
-  @media only screen and (max-width: 550px){
+  @media only screen and (max-width: 600px){
     .desktop{
       display:none;
     }
@@ -120,7 +120,7 @@ html{
     font-weight: lighter;
     color: #f2f2f2;
   }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 600px){
   .learn_container{
     flex-direction: column;
     align-items: center;
@@ -158,6 +158,10 @@ html{
   flex-direction: row;
 }
 
+#practice p {
+  margin: 0px;
+  font-weight: lighter;
+}
 #practice_left{
   width:60%;
   /*height:auto;*/
@@ -226,8 +230,9 @@ display: flex;
   display: flex;
   height: 33%;
   background-color: lightgrey;
+  margin-bottom: 32px;
 }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 600px){
   #practice_left{
     display: none;
   }
@@ -299,7 +304,7 @@ display: flex;
   margin-top: 8px;
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 600px){
   .image_container{
     display: none;
   }
@@ -319,5 +324,163 @@ display: flex;
   #courses{
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/*Thesis Section*/
+#thesis_title{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 32px;
+}
+#thesis{
+  display: flex;
+  flex-direction: row;
+}
+
+#thesis p{
+  margin: 0px;
+  font-weight: lighter;
+}
+
+#thesis_image video{
+  width:100%;
+  height: auto;
+}
+
+#thesis{
+  display: flex;
+  flex-direction: row;
+}
+
+#thesis p {
+  margin: 0px;
+  font-weight: lighter;
+}
+#thesis_left{
+  width:60%;
+  /*height:auto;*/
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+#thesis_image img{
+  width:100%;
+  height: auto;
+}
+#thesis_image{
+  margin:32px 24px 32px 0px;
+}
+#thesis_image h5{
+}
+#thesis_right{
+  width:40%;
+  height:10px;
+}
+
+#thesis_left p{
+  line-height: 1.3rem;
+  font-weight: lighter;
+}
+#thesis h5{
+  margin: 32px 0px;
+  font-size: 0.8rem;
+}
+
+#thesis_right{
+  display: flex;
+  flex-direction: column;
+  height:500px;
+}
+#thesis #row1{
+  display: flex;
+  margin-top: 16px;
+  height: 37%;
+}
+#thesis .rowimg{
+  width: 35%;
+  margin: 16px;
+}
+#thesis_right img{
+  width: 100%;
+}
+.thesis_row_text{
+  width: 65%;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.thesis_row_text h2{
+  margin-top: 24px;
+}
+#thesis_right a{
+  color: #3385ff;
+  margin-top: 16px;
+}
+#thesis #row2{
+display: flex;
+  height: 37%;
+}
+
+@media only screen and (max-width: 600px){
+  #thesis_image{
+    width: 100%
+  }
+  #thesis_left{
+    width: 100%;
+    padding: 0px;
+  }
+  #thesis_left h1, p{
+    display: none;
+  }
+  #thesis_right{
+    display:none;
+    height: auto;
+  }
+  #thesis_title h1{
+    margin-bottom: 0px;
+  }
+  #thesis_right h1, p{
+    display: none;
+  }
+
+  .rowimg{
+    display:none;
+
+}
+
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 4.0625rem;
+  width: 100%;
+  height: 4rem;
+  border-top: 1px solid lightgray;
+}
+
+footer nav span, footer span, footer nav {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+
+footer nav {
+  margin-right: 1.5rem;
+}
+
+footer .credits {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) { /* Mobile Sytling */
+  .footer-desktop {
+    display: none;
+  }
+  footer span {
+    padding-top: 0;
+    align-self: center;
   }
 }
