@@ -8,7 +8,7 @@ html{
   font-family: helvetica;
 
 }
-/*Header styling*/
+/*Header segment styling*/
   header{
     position:fixed;
     width:100%;
@@ -50,10 +50,7 @@ html{
   header ul li{
     padding:8px;
   }
-/*
-  .full_container{
-    height:448px;
-  }*/
+
 
   @media only screen and (max-width: 600px){
     .desktop{
@@ -74,7 +71,8 @@ html{
       margin-left: 16px;
     }
   }
-/*Learn content styling*/
+
+/*Learn segment styling*/
 
   .learn_container{
     width: 100%;
@@ -151,7 +149,7 @@ html{
   }
 }
 
-/*Styling for practice segment*/
+/*Practice segment styling*/
 
 #practice{
   display: flex;
@@ -265,6 +263,7 @@ display: flex;
   }
 }
 
+/*Start learning segment Styling*/
 #start_learning{
   width: 100%;
   display: flex;
@@ -327,7 +326,7 @@ display: flex;
   }
 }
 
-/*Thesis Section*/
+/*Thesis Segment styling*/
 #thesis_title{
   align-items: center;
   justify-content: center;
@@ -447,10 +446,10 @@ display: flex;
 
   .rowimg{
     display:none;
-
+}
 }
 
-}
+/*Footer styling*/
 
 footer {
   display: flex;
